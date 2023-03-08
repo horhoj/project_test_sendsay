@@ -1,0 +1,26 @@
+.wrap {
+  padding: 4px;
+  display: grid;
+  grid-template:
+  "d7 d8 d9"
+  "d4 d5 d6"
+  "d1 d2 d3"
+  "dx dx d0";
+
+  gap: 8px;
+  height: 224px;
+}
+
+.operationBtn {
+  background-color: #FFFFFF;
+  border: 1px solid #E2E3E5;
+  border-radius: 6px;
+  color: #000;
+
+  &[disabled] {
+    color: #000;
+    background-color: #FFFFFF;
+    border: 1px solid #E2E3E5;
+    border-radius: 6px;
+  }
+}

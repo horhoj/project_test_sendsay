@@ -1,5 +1,5 @@
 import { Page404 } from '@pages/Error404Page';
-import { MainPage } from '@pages/MainPage';
+import { ConstructorPage } from '@pages/ConstructorPage';
 import { FC } from 'react';
 
 interface RouteItem {
@@ -13,8 +13,8 @@ export type RouteNameList = (typeof routeNameList)[number];
 
 export const routeList: Record<RouteNameList, RouteItem> = {
   main: {
-    path: '/main',
-    component: MainPage,
+    path: '/constructor',
+    component: ConstructorPage,
   },
   error404: {
     path: '*',

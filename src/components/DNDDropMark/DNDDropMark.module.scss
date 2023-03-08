@@ -1,0 +1,37 @@
+.wrap {
+  height: 2px;
+  width: 100%;
+  background-color: blue;
+  position: absolute;
+  left: 0;
+
+}
+
+.isTop {
+  top: -8px;
+}
+
+.isBottom {
+  bottom: -8px;
+}
+
+.internalWrap {
+  position: relative;
+}
+
+.marker {
+  background-color: blue;
+  height: 10px;
+  width: 10px;
+  position: absolute;
+  transform: rotateZ(45deg);
+  top: -4px;
+}
+
+.markerLeft {
+  left: -5px;
+}
+
+.markerRight {
+  right: -5px;
+}

@@ -58,7 +58,9 @@ export const useDND = <D>({ onSubmit, onHandleDragOver }: UseDNDPayload<D>) => {
       return;
     }
     if (dragOverIndex !== null && dropOverIndex !== null && dndType !== null) {
-      onSubmit(dragOverIndex, index, dndType, e);
+      setTimeout(() => {
+        onSubmit(dragOverIndex, index, dndType, e);
+      }, 20);
     }
   };
 
@@ -66,6 +68,7 @@ export const useDND = <D>({ onSubmit, onHandleDragOver }: UseDNDPayload<D>) => {
     isDrag,
     dropOverIndex,
     dragOverIndex,
+    dndType,
     handleOnDragStart,
     handleOnDragOver,
     handleOnDragLeave,

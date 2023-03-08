@@ -1,0 +1,78 @@
+.wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.dndWrap {
+  display: flex;
+  gap: 100px;
+  margin-top: 56px;
+  user-select: none;
+}
+
+.columnWrap {
+  display: flex;
+  flex-direction: column;
+  min-width: 240px;
+  max-width: 240px;
+  gap: 16px;
+}
+
+.elWrap {
+  background-color: rgba(0, 0, 0, 0);
+  position: relative;
+}
+
+.dropElWrapActive {
+  border-top: 1px solid blue;
+  padding-top: 9px;
+}
+
+.isDraggableBlock {
+  opacity: .5;
+}
+
+.item {
+  //border: 1px solid #333;
+  background-color: #fff;
+}
+
+.last {
+  background-color: #fff;
+  position: relative;
+  height: 100%;
+}
+
+.columnDropWrap {
+  position: relative;
+}
+
+.columnDropEmptyWrap {
+  border: 2px dashed #C4C4C4;
+  border-radius: 6px;
+}
+
+.columnDropEmptyWrapActive {
+  background-color: #F0F9FF;
+  border: 2px dashed #C4C4C4;
+  border-radius: 6px;
+}
+
+.dropperWrap {
+  width: 100%;
+  position: absolute;
+  height: 100%;
+  background-color: red;
+}
+
+.showDragCursor {
+  cursor: move;
+}
+
+.showDragStyle {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.06), 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+}
+

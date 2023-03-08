@@ -1,0 +1,21 @@
+.wrap {
+  padding: 4px;
+}
+
+.resultBtn {
+  background-color: #5D5FEF;
+  border-radius: 6px;
+  width: 100%;
+  height: 64px;
+  border: none;
+  color: #fff;
+
+  &[disabled] {
+    background-color: #5D5FEF;
+    border-radius: 6px;
+    width: 100%;
+    height: 64px;
+    border: none;
+    color: #fff;
+  }
+}
