@@ -11,11 +11,20 @@
   border: 1px solid #E2E3E5;
   border-radius: 6px;
   color: #000;
+  font-weight: 500;
 
   &[disabled] {
     color: #000;
     background-color: #FFFFFF;
     border: 1px solid #E2E3E5;
     border-radius: 6px;
+  }
+}
+
+.runtimeFnBtn {
+  cursor: pointer;
+
+  &:hover {
+    border: 2px solid #5D5FEF;
   }
 }

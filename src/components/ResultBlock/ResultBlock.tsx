@@ -1,16 +1,30 @@
 import { FC } from 'react';
 import classNames from 'classnames';
-import { RESULT } from '@entitiesTypes/calculator';
+import { CalculatorResult, RESULT } from '@entitiesTypes/calculator';
 import styles from './ResultBlock.module.scss';
 
 interface ResultBlockProps {
   isSkeletonMode: boolean;
+  onFn?: (fn: CalculatorResult) => void;
 }
 
-export const ResultBlock: FC<ResultBlockProps> = ({ isSkeletonMode }) => {
+export const ResultBlock: FC<ResultBlockProps> = ({ isSkeletonMode, onFn }) => {
+  const handleOnFn = (fn: CalculatorResult) => {
+    if (onFn) {
+      onFn(fn);
+    }
+  };
+
   return (
     <div className={classNames(styles.wrap)}>
-      <button className={styles.resultBtn} disabled={isSkeletonMode}>
+      <button
+        className={classNames(
+          styles.resultBtn,
+          !isSkeletonMode && styles.runtimeFnBtn,
+        )}
+        disabled={isSkeletonMode}
+        onClick={() => handleOnFn('=')}
+      >
         {RESULT}
       </button>
     </div>

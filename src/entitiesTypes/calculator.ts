@@ -7,9 +7,9 @@ export const PALETTE_DATA = [
 
 export type CalculatorBlockType = (typeof PALETTE_DATA)[number];
 
-export const OPERATION_LIST = ['/', 'X', '-', '+'] as const;
+export const OPERATION_LIST = ['/', '*', '-', '+'] as const;
 
-export type CalculatorOperationItem = (typeof OPERATION_LIST)[number];
+export type CalculatorOperations = (typeof OPERATION_LIST)[number];
 
 export const DIGITS_LIST = [
   '7',
@@ -21,8 +21,12 @@ export const DIGITS_LIST = [
   '1',
   '2',
   '3',
-  ',',
+  '.',
   '0',
 ] as const;
 
+export type CalculatorDigits = (typeof DIGITS_LIST)[number];
+
 export const RESULT = '=';
+
+export type CalculatorResult = typeof RESULT;

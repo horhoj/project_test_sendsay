@@ -9,6 +9,7 @@
   height: 64px;
   border: none;
   color: #fff;
+  font-weight: 500;
 
   &[disabled] {
     background-color: #5D5FEF;
@@ -17,5 +18,13 @@
     height: 64px;
     border: none;
     color: #fff;
+  }
+}
+
+.runtimeFnBtn {
+  cursor: pointer;
+
+  &:hover {
+    background-color: rgba(#5D5FEF, 0.95);
   }
 }
