@@ -15,6 +15,7 @@ export const DigitsBlock: FC<DigitsProps> = ({ isSkeletonMode }) => {
           key={el}
           style={{ gridArea: `d${el === ',' ? 'x' : el}` }}
           className={styles.operationBtn}
+          disabled={isSkeletonMode}
         >
           {el}
         </button>

@@ -1,0 +1,45 @@
+.wrap {
+  max-width: 240px;
+  min-width: 240px;
+}
+
+.ul {
+  list-style: none;
+  display: flex;
+  width: 100%;
+  background: #F3F4F6;
+  border-radius: 6px;
+}
+
+.li {
+  width: 100%;
+}
+
+.navLink {
+  display: flex;
+  width: 100%;
+  text-decoration: none;
+  justify-content: center;
+  align-items: center;
+  height: 36px;
+  color: #4D5562;
+  font-size: 14px;
+  font-weight: 500;
+  gap: 12px;
+
+  & > svg {
+    width: 16px;
+    stroke: #4D5562;
+  }
+
+}
+
+.navLinkActive {
+  background: #FFFFFF;
+  border: 1px solid #E2E3E5;
+  border-radius: 5px;
+
+  & > svg {
+    stroke: #5D5FEF;
+  }
+}
